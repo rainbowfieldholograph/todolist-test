@@ -1,28 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Search.module.css'
 
-const Search = ({ setSearch }) => {
-  const [input, setInput] = useState('')
+const Search = ({ setSearch, search }) => {
   return (
     <div className={styles.search}>
       <input
-        value={input}
+        value={search}
         onChange={(e) => {
-          setInput(e.target.value)
+          setSearch(e.target.value)
         }}
         className={styles.input}
         type="text"
       />
-      <img
-        onClick={() => {
-          setSearch(input)
-        }}
-        className={styles.btn}
-        width={20}
-        height={20}
-        src="img/search.svg"
-        alt="search"
-      />
+      <img width={20} height={20} src="img/search.svg" alt="search" />
     </div>
   )
 }

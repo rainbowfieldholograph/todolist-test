@@ -31,7 +31,7 @@ const App = () => {
     )
   }
 
-  const onSearch = () => {
+  const filterItems = () => {
     return items.filter((item) => item.title.toUpperCase().includes(search.toUpperCase()))
   }
 
@@ -39,8 +39,9 @@ const App = () => {
     <div className="wrapper">
       <Header />
       <Home
+        search={search}
         setSearch={setSearch}
-        onSearch={onSearch}
+        filterItems={filterItems}
         addNew={addNewItem}
         onToggleCompleted={onToggleCompleted}
       />
