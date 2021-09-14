@@ -7,9 +7,21 @@ import Home from './pages/home/Home'
 const App = () => {
   const [items, setItems] = useState([
     { title: 'Название', desc: 'Описание', completed: false },
-    { title: 'qq2', desc: 'ww2', completed: true },
-    { title: 'qq3', desc: 'ww3', completed: false },
-    { title: 'qq4', desc: 'ww4', completed: false },
+    {
+      title: 'lorem',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut molestias illum non similique facere reiciendis odit iure sunt, ex dignissimos nam at eaque temporibus placeat blanditiis nulla possimus mollitia quia.',
+      completed: true,
+    },
+    {
+      title: 'task 3',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni maxime rerum incidunt saepe. Inventore voluptatem esse, nisi laborum dignissimos dolor accusantium, nemo totam doloremque officia enim? Aut, inventore optio!',
+      completed: false,
+    },
+    {
+      title: 'Lorem ipsum dolor sit.',
+      desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem in excepturi incidunt nostrum? Culpa aperiam dolores quas debitis cum, necessitatibus, corrupti, magnam unde natus tenetur iure non explicabo! Reprehenderit, architecto?',
+      completed: false,
+    },
   ])
 
   const [search, setSearch] = useState('')

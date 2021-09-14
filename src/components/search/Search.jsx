@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Search.module.css'
+import searchImg from '../../img/search.svg'
 
 const Search = ({ setSearch, search }) => {
   return (
@@ -12,7 +13,7 @@ const Search = ({ setSearch, search }) => {
         className={styles.input}
         type="text"
       />
-      <img width={20} height={20} src="img/search.svg" alt="search" />
+      <img width={20} height={20} src={searchImg} alt="search" />
     </div>
   )
 }
